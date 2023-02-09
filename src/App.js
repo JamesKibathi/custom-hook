@@ -1,9 +1,9 @@
-import { useState } from 'react';
+
 import './App.css';
 
 function App() {
 
-  const [isVisible,setIsVisible]=useState(false)
+  
 
 
   return (
