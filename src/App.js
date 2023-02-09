@@ -3,21 +3,16 @@ import './App.css';
 
 function App() {
 
-  const [display,setDisplay]=useState(false)
+  const [isVisible,setIsVisible]=useState(false)
 
-  function clicked(){
-      console.log("I am clicked")
-      setDisplay(true)
-
-  }
 
   return (
    
     <div className="App">
     
-    <button onClick={clicked}>{display? "hidden":"show"}</button>
+    <button onClick={()=>setIsVisible((prev)=>!prev)}>{isVisible? "Hide":"Show"}</button>
 
-    <h1>{display ?"Text":""}</h1>
+    {isVisible && <h1>Hidden text</h1>}
         
     </div>
   );
