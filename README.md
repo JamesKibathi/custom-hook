@@ -10,3 +10,5 @@ Custom hooks has 3 rules:
 *Has to be at the highest level of a component
 *Should be inside a component and not a function
 
+### Use cases
+- Good for reusing data
